@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 // import Addashboard from './AdDashboard';
 import Nav from './Nav';
 import Button from '@mui/material/Button';
-import AdSignin from './AdSignin';
-import Addashboard from './AdDashboard';
-
 
 
 const Login = () => {
@@ -73,10 +70,8 @@ const logx=(e)=>
         </Link>
     
       
-      
-  // </div>
-
-// </div>
+      </div>
+</div>
 
 
    )

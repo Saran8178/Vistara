@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import '../Assests/CSS/Payment.css';
 import { Link } from 'react-router-dom';
-import Success from './Success';
 const Payment = () => {
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
 

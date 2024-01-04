@@ -20,11 +20,6 @@ export default function Bed() {
   const { setSelectedProduct } = useAppContext();
  
 
-  
-
-  const handleSidebarSelect = (item) => {
-    setSelectedItem(item);
-  };
 
   const blackTheme = createTheme({
     palette: {
@@ -34,9 +29,6 @@ export default function Bed() {
     },
   });
 
-  const handleClick = () => {
-    navigate("/login");
-  };
 
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',

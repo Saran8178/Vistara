@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import'../Assests/CSS/ReviewSignin.css'
 // import img3 from '../Assests/Image/Sofa.jpg'
-import final from '../Assests/Image/Furniture.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 

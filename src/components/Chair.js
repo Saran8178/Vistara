@@ -17,9 +17,7 @@ export default function Chair() {
   const [selectedItem, setSelectedItem] = useState('home');
   const navigate = useNavigate();
 
-  const handleSidebarSelect = (item) => {
-    setSelectedItem(item);
-  };
+
 
   const blackTheme = createTheme({
     palette: {
@@ -28,10 +26,6 @@ export default function Chair() {
       },
     },
   });
-
-  const handleClick = () => {
-    navigate("/login");
-  };
 
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',

@@ -7,8 +7,6 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useAppContext } from './Appcontext';
 import { Link } from 'react-router-dom';
-import Payment from './Payment';
-
 const Common = () => {
   const { selectedProduct } = useAppContext();
 

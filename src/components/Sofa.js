@@ -18,13 +18,7 @@ export default function Sofa() {
   const [selectedItem, setSelectedItem] = useState('home');
   const navigate = useNavigate();
   const { setSelectedProduct } = useAppContext();
- 
 
-  
-
-  const handleSidebarSelect = (item) => {
-    setSelectedItem(item);
-  };
 
   const blackTheme = createTheme({
     palette: {
@@ -34,9 +28,6 @@ export default function Sofa() {
     },
   });
 
-  const handleClick = () => {
-    navigate("/login");
-  };
 
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',
