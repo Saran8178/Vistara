@@ -1,0 +1,294 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content:center ;
+ padding-top: 200px;
+ background-color: whitesmoke;
+
+}
+img {
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 800ms;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  background-color: white;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  position: relative;
+  top: -90px;
+  left: -220px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.form-control label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(100, 100, 100, 1);
+}
+
+.form-control small {
+  margin: -18px;
+  font-size: 13px;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+.form-control input {
+  margin-top: 6px;
+  background-color: rgba(241, 241, 241, 1);
+  display: block;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  padding: 15px;
+  width: 325px;
+  background-color:rgb(246, 236, 218);
+  gap: 2rem;
+}
+
+.form-control input::placeholder {
+  color: rgb(24, 23, 23);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.form-control i {
+  position: relative;
+  top: -35px;
+  left: 295px;
+  padding-top: 500px;
+  padding-left: 200px;
+}
+
+.main {
+  border-radius: 20px;
+}
+
+.first {
+  padding-bottom: 30px;
+}
+
+.sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(100, 100, 100, 1);
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: rgba(67, 67, 67, 1);
+}
+
+.re_password {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(97, 51, 197, 1);
+  cursor: pointer;
+}
+
+.remember {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(100, 100, 100, 1);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  cursor: pointer;
+}
+
+.pass-esq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.enter {
+  margin-bottom: 6px;
+  display: block;
+  color: aliceblue;
+  background: #6133c5;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 11px;
+  border: none;
+  width: 325px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.create {
+  color: rgba(67, 67, 67, 1);
+  font-weight: 500;
+  font-size: 16px;
+  background: rgba(248, 248, 248, 1);
+  border: 2px solid #e7e7e7;
+  border-radius: 11px;
+  width: 325px;
+  height: 45px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.gang {
+  width: 70%;
+  height: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: lightseagreen;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 10px 10px;
+  padding: 0 0px;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.size {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.fly {
+  display: flex;
+  width: 60px;
+}
+
+.diff {
+  background-color: black;
+  color: red;
+  padding-bottom: 11px;
+  font-size: 17px;
+}
+
+.diff a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.last {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 15%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar {
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.searchbar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+.searchbar button img {
+  width: 50px;
+}
+
+.bod {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.crew {
+  width: 60%;
+  height: 10%;
+}
+
+.logo {
+  width: 60px;
+  height: 70px;
+}
+.container1{
+  background-color:rgb(209, 217, 225);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

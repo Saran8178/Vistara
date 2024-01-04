@@ -1,0 +1,93 @@
+/* styles.css */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    width: 400px; /* Increase container width to 400px */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column; /* Align radio buttons vertically */
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px; /* Adjusted spacing between inputs */
+  }/* Payment.css */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #3498db; /* Change border color to a nice blue */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Increased spacing between label groups */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px; /* Add a small margin to radio buttons */
+  }
+  
+  button {
+    width: 100%;
+    background-color: #2ecc71; /* Green color for the button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #27ae60; /* Darker green color on hover */
+  }
+  
+  
+  button {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button text */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

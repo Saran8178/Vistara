@@ -1,0 +1,19 @@
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    background-color: lightseagreen !important;
+}
+.css-hyum1k-MuiToolbar-root{
+    background-color: lightseagreen !important;
+    min-height: 70px;
+}
+.css-9xhvuk {
+    display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.css-rqglhn-MuiTable-root{
+    background-color:rgb(13, 125, 236);
+}
+.css-1ex1afd-MuiTableCell-root{
+    color:aliceblue
+}
