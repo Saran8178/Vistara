@@ -2,7 +2,7 @@ import '../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Nav from './Nav';
-
+import Dashboard from './Dashboard';
 
 
 
@@ -26,7 +26,7 @@ const AdLogin = () => {
     const b = localStorage.getItem('pass');
     if (a === data.email && b === data.password) {
 
-      navigate('/Addashboard');
+      navigate('/dashboard');
 
     }
     else
