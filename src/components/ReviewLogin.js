@@ -2,7 +2,7 @@ import'../Assests/CSS/ReviewLogin.css'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import Addashboard from './AdDashboard';
+import Addashboard from './AdDashboard';
 import Nav from './Nav';
 import Button from '@mui/material/Button';
 
@@ -65,7 +65,7 @@ const logx=(e)=>
           
         
         </form></center>
-        <Link to={"/AdSignin"}>
+        <Link to={"/Addashboard"}>
         <Button variant="text">Admin</Button>
         </Link>
     

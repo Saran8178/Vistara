@@ -14,8 +14,7 @@ import Chair from "./components/Chair";
 import Common from "./components/Common";
 import Payment from "./components/Payment";
 import Success from "./components/Success";
-import AdSignin from "./components/AdSignin";
-import AdLogin from"./components/AdLogin"
+
 
 
 
@@ -39,8 +38,7 @@ function App() {
           <Route path="/common/:id" element={<Common />} />
           <Route path="/Payment" element={<Payment />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/AdSignin" element={<AdSignin />} />
-          <Route path="/AdLogin" element={<AdLogin />} />
+        
          
 
           
