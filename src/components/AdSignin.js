@@ -50,7 +50,8 @@ const AdSignin = () => {
             <Link to="/AdLogin" className="same">LOGIN</Link>
           </li>
           <li>
-            <a href="#" className="same">ABOUT US</a>
+            <Link to="/AdLogin" className="same">ABOUT US</Link>
+            
           </li>
         </ul>
 

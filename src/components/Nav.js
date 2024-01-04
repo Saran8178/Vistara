@@ -19,9 +19,11 @@ const Nav=()=>{
           </li>
           <li>
             <Link to="/login" className="same">LOGIN</Link>
+            
           </li>
           <li>
-            <a href="#" className="same">ABOUT US</a>
+            <Link to="/login" className="same">LOGIN</Link>
+           
           </li>
         </ul>
 
