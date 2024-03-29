@@ -35,7 +35,7 @@ const Signin = () => {
     return (
     
 <div>
-<nav>
+<nav style={{backgroundColor:'lightseagreen'}}>
         <ul className="nav">
           
           <li>

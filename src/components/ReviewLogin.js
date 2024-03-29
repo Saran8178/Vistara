@@ -1,79 +1,56 @@
-import'../Assests/CSS/ReviewLogin.css'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Addashboard from './AdDashboard';
-import Nav from './Nav';
 import Button from '@mui/material/Button';
-
+import Nav from './Nav'; // Assuming Nav component is defined in Nav.js
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [data, setData] = useState({
+    email: '',
+    password: ''
+  });
 
-
-
-    const navigate = useNavigate();
-  const [data,setData]=useState({
-
-    email:'',
-    password:''
-
-
-  })
-
-const logx=(e)=>
-{
-  e.preventDefault();
-  const a=localStorage.getItem('email');
-  const b=localStorage.getItem('pass');
-  if(a===data.email && b===data.password)
-  {
-      
-          navigate('/AdDashboard');
-         
-  }
-  else
+  const logx = (e) => {
+    e.preventDefault();
+    const a = localStorage.getItem('email');
+    const b = localStorage.getItem('pass');
+    if (a === data.email && b === data.password) {
+      // Check if the user is an admin or regular user (you can use a flag or role for this)
+      const isAdmin = data.email === 'admin@example.com'; // Example: Change this condition based on your logic
+      if (isAdmin) {
+        navigate('/AdDashboard'); // Navigate to the admin dashboard
+      } else {
+        navigate('/Dashboard'); // Navigate to the regular user dashboard
+      }
+    } else {
       alert('Invalid Credentials');
-}
+    }
+  };
 
-  const HandleChange=(e)=>
-  {
-      setData({...data,[e.target.id]:e.target.value})
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.id]: e.target.value });
+  };
 
-  }
-    return (
-    
-<div>
-<Nav/>
-    {/* <div class="main"> */}
-      <div class="container1">
-      <div class="logo">
-      </div>
-        
-       <center> <form class="form-control" onSubmit={logx}>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" name="Email"onChange={HandleChange} />
-          
-          <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" name="password"onChange={HandleChange} />
-         
-
-          
-            
-          
-
-         <button class="enter" type="submit" >Login</button >
-          
-        
-        </form></center>
-        <Link to={"/Addashboard"}>
-        <Button variant="text">Admin</Button>
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <Nav /> {/* Include Nav component */}
+      {/* Your login form */}
+      <form className="form-control" onSubmit={logx} style={{ display: 'inline-block', marginTop: '50px' }}>
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" name="Email" onChange={handleChange} /><br />
+        <label htmlFor="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" onChange={handleChange} /><br />
+        <button className="enter" type="submit">Login</button>
+      </form>
+      {/* Link to the Admin dashboard */}
+      <div style={{ marginTop: '20px' }}>
+        <Link to="/AdDashboard">
+          <Button variant="text">Admin</Button>
         </Link>
-    
-      
       </div>
-</div>
+    </div>
+  );
+};
 
-
-   )
-   }
-   export default Login;
+export default Login;

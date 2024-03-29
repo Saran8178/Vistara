@@ -5,8 +5,8 @@ const Nav=()=>{
     return (
 
         <div style={{ backgroundColor: 'white' }}>
-      <nav>
-        <ul className="nav">
+      <nav style={{backgroundColor:'lightseagreen'}}>
+        <ul className="nav" div >
          
           <li>
             <Link to='/'>HOME</Link>
