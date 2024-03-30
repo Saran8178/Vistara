@@ -1,11 +1,12 @@
-body{
+body {
   margin: 0;
   display: flex;
-  justify-content:center ;
- padding-top: 200px;
- background-color: whitesmoke;
-
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure full height */
+  background-color: whitesmoke;
 }
+
 img {
   overflow: hidden;
   object-fit: cover;
@@ -31,10 +32,20 @@ img {
 .form {
   padding: 20px;
 }
+.container{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 250px;
+}
+
 
 .form-control {
   margin-bottom: 10px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -156,10 +167,10 @@ a {
   text-decoration: none;
 }
 
-.gang {
+/* .gang {
   width: 70%;
   height: 80%;
-}
+} */
 
 nav {
   display: flex;
@@ -230,14 +241,6 @@ h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  width: 100%;
-  min-height: 15%;
-  padding: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .searchbar {
   width: 100%;

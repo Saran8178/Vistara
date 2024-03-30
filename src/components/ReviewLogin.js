@@ -33,24 +33,17 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <Nav /> {/* Include Nav component */}
-      {/* Your login form */}
-      <form className="form-control" onSubmit={logx} style={{ display: 'inline-block', marginTop: '50px' }}>
+    <div className="container">
+      <form className="form-control" onSubmit={logx}>
         <label htmlFor="email">Email</label>
         <input type="email" id="email" placeholder="Enter your email" name="Email" onChange={handleChange} /><br />
         <label htmlFor="password">Password</label>
         <input type="password" id="password" placeholder="Enter your password" name="password" onChange={handleChange} /><br />
         <button className="enter" type="submit">Login</button>
       </form>
-      {/* Link to the Admin dashboard */}
-      <div style={{ marginTop: '20px' }}>
-        <Link to="/AdDashboard">
-          <Button variant="text">Admin</Button>
-        </Link>
-      </div>
     </div>
   );
 };
 
 export default Login;
+  

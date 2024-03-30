@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { styled, alpha, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
@@ -12,6 +12,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Link, useNavigate } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
+import Preloader from './Preloader';
 
 export default function Chair() {
   const [selectedItem, setSelectedItem] = useState('home');
@@ -41,6 +42,15 @@ export default function Chair() {
       width: 'auto',
     },
   }));
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+ 
+    setTimeout(() => {
+      setLoading(false);
+    }, 8000); 
+  }, []);
+
 
   const SearchIconWrapper = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2),
@@ -180,6 +190,7 @@ export default function Chair() {
   return (
     <ThemeProvider theme={blackTheme}>
       <CssBaseline />
+      {loading ? <Preloader /> : null} 
       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <AppBar position="fixed" style={{ width: '100%' }}>
           <Toolbar>

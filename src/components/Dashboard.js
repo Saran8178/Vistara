@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled, alpha, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
@@ -17,6 +17,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Preloader from './Preloader';
 
 export default function Dashboard() {
   const [selectedItem, setSelectedItem] = useState('home');
@@ -25,6 +26,14 @@ export default function Dashboard() {
   const handleClick = () => {
     navigate("/login");
   };
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Change this time as per your requirement
+  }, []);
 
   const CustomCard = ({ to, imageSrc, title, material, price }) => (
     <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -142,6 +151,7 @@ export default function Dashboard() {
   return (
     <ThemeProvider theme={blackTheme}>
       <CssBaseline />
+      {loading ? <Preloader /> : null} {/* Moved preloader inside the parent JSX */}
       <Box sx={{ display: 'flex', paddingLeft: 50, height: 6 }}>
         <AppBar position="fixed" style={{ width: '100%' }}>
           <Toolbar>
